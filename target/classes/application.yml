@@ -1,0 +1,12 @@
+zuul:
+  routes:
+    employee:
+      serviceId: employee
+    department:
+      serviceId: department
+spring:
+  cloud:
+    kubernetes:
+      discovery:
+        all-namespaces: true
+        enabled: true
